@@ -1,0 +1,15 @@
+C:\Users\Dev\Documents\AnonTerm\bin\Debug\net6.0\AnonTerm.exe
+C:\Users\Dev\Documents\AnonTerm\bin\Debug\net6.0\AnonTerm.deps.json
+C:\Users\Dev\Documents\AnonTerm\bin\Debug\net6.0\AnonTerm.runtimeconfig.json
+C:\Users\Dev\Documents\AnonTerm\bin\Debug\net6.0\AnonTerm.dll
+C:\Users\Dev\Documents\AnonTerm\bin\Debug\net6.0\ref\AnonTerm.dll
+C:\Users\Dev\Documents\AnonTerm\bin\Debug\net6.0\AnonTerm.pdb
+C:\Users\Dev\Documents\AnonTerm\obj\Debug\net6.0\AnonTerm.csproj.AssemblyReference.cache
+C:\Users\Dev\Documents\AnonTerm\obj\Debug\net6.0\AnonTerm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dev\Documents\AnonTerm\obj\Debug\net6.0\AnonTerm.AssemblyInfoInputs.cache
+C:\Users\Dev\Documents\AnonTerm\obj\Debug\net6.0\AnonTerm.AssemblyInfo.cs
+C:\Users\Dev\Documents\AnonTerm\obj\Debug\net6.0\AnonTerm.csproj.CoreCompileInputs.cache
+C:\Users\Dev\Documents\AnonTerm\obj\Debug\net6.0\AnonTerm.dll
+C:\Users\Dev\Documents\AnonTerm\obj\Debug\net6.0\ref\AnonTerm.dll
+C:\Users\Dev\Documents\AnonTerm\obj\Debug\net6.0\AnonTerm.pdb
+C:\Users\Dev\Documents\AnonTerm\obj\Debug\net6.0\AnonTerm.genruntimeconfig.cache
