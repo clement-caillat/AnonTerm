@@ -10,7 +10,6 @@
         {
             Initialize();
             Terminal.Start();
-            Console.ReadKey();
         }
 
         private static void Initialize()
