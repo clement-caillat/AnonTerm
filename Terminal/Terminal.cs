@@ -3,7 +3,7 @@ namespace Terminal
     public static class Terminal
     {
         public static void Start()
-        {
+        {   
             while(true)
             {
                 Console.Write("AnonTerm> ");
@@ -14,18 +14,21 @@ namespace Terminal
 
         private static void CommandHandler(string? command)
         {
-            if (command == "clear") 
+            Command console = new Command();
+            try
             {
-                Clear();
-            }else if(command == "exit")
+                if (command != null)
+                {
+                    string[] args = command.Split(' ');
+                    console.commands[args[0]](args);
+                }
+                else {
+                    Error<string>("Command not found");
+                }
+            } catch(Exception)
             {
-                Exit();
+                Error<string>($"{command}: Command not found");
             }
-            else
-            {
-                Error<string>("This command is not recognized");
-            }
-
         }
 
 
@@ -62,7 +65,7 @@ namespace Terminal
             if (p != null)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"Error : " + p.ToString());
+                Console.WriteLine($"AnonTerm: " + p.ToString());
                 Console.ResetColor();
             }
             else
@@ -73,23 +76,7 @@ namespace Terminal
             }
             
         }
-
         #endregion
 
-        #region Basic commands
-        public static void Clear()
-        {
-            Console.Clear();
-            Start();
-        }
-
-        public static void Exit()
-        {
-            Log<string>("Goodbye Anonymous :)");
-            Thread.Sleep(500);
-            Environment.Exit(0);
-        }
-
-        #endregion
     }
 }
