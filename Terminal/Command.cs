@@ -1,14 +1,25 @@
 namespace Terminal
 {
+    using PackageManager;
     public class Command
     {
-        public Dictionary<string, System.Action<string[]>> commands = new Dictionary<string, System.Action<string[]>>();
+        public Dictionary<string, Action<string[]>> commands = new Dictionary<string, Action<string[]>>();
 
+        private Dictionary<string, Action> tools = new Dictionary<string, Action>();
+
+        private Lulz pm = new Lulz();
+
+        private void Init()
+        {
+            
+        }
         public Command()
         {
+            Init();
             commands["clear"] = Clear;
             commands["exit"] = Exit;
-            commands["use"] = Use;
+            commands["lulz"] = Lulz;
+            // commands["use"] = Use;
         }
 
         #region Generic
@@ -18,13 +29,13 @@ namespace Terminal
         }
 
         public void Exit(string[] args)
-        {
+        {   
             Environment.Exit(0);
         }
 
-        public void Use(string[] args)
+        public void Lulz(string[] args)
         {
-            Terminal.Log<string>(args[1]);
+            
         }
         #endregion
     }
